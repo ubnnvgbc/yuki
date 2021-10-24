@@ -37,6 +37,7 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script> -->
 
+
 </head>
 
 <body>
@@ -79,11 +80,9 @@
                 if (Yoffset > 1000 && $(window).width() > 1199) {
 
                     $(".navbar").show();
-                }
-                else if(Yoffset>=50  &&  $(window).width()<1199){
-                	$(".navbar").show();
-                }
-                else {
+                } else if (Yoffset >= 50 && $(window).width() < 1199) {
+                    $(".navbar").show();
+                } else {
                     $(".navbar").hide();
                 };
             });
@@ -95,9 +94,7 @@
 
     <!----------------------------------------------- main -------------------------------------------->
 
-    <div class="index-menu-animation-phone">
-        
-    </div>
+    <!-- <div class="index-menu-animation-phone"></div> -->
 
     <div class="index-menu-animation">
 
@@ -107,25 +104,54 @@
         <!-- 222 -->
         <div class="container">
             <div class="row hexagon-menu">
-                <div class="hexagon animated wow zoomInDown" data-wow-delay="400ms">小城新聞</div>
 
-                <div class="hexagon animated wow zoomInDown" data-wow-delay="600ms">找房｜新建案</div>
+                <a href="" class="hexagon animated wow zoomInDown" data-wow-delay="400ms">
+                    <h6>小城新聞</h6>
+                    <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 350">
+                        <polygon class="cls-1" points="0.2,86.5 0.2,258.5 149.2,344.5 298.2,258.5 298.2,86.5 149.2,0.5 " />
+                    </svg>
+                </a>
+              
+            
+                <a href="" class="hexagon animated wow zoomInDown" data-wow-delay="600ms">
+                    <h6>找房｜新建案</h6>
+                    <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 350">
+                        <polygon class="cls-1" points="0.2,86.5 0.2,258.5 149.2,344.5 298.2,258.5 298.2,86.5 149.2,0.5 " />
+                    </svg>
+                </a>
 
                 <div class="logo-Hexagon animated wow zoomInDown" data-wow-delay="800ms">
                     <img src="images/logo-Hexagon.svg" alt="" class="logo-index animated wow bounceInUp">
                 </div>
 
-                <a href="performance.html">
-                    <div class="hexagon animated wow zoomInDown" data-wow-delay="1000ms">
-                        興城業績
-                    </div>
+                <a href="performance.html" class="hexagon animated wow zoomInDown" data-wow-delay="1000ms">
+                    <h6>興城業績</h6>
+                    <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 350">
+                        <polygon class="cls-1" points="0.2,86.5 0.2,258.5 149.2,344.5 298.2,258.5 298.2,86.5 149.2,0.5 " />
+                    </svg>
                 </a>
 
-                <div class="hexagon animated wow zoomInDown" data-wow-delay="1200ms">買房筆記</div>
+                <a href="" class="hexagon animated wow zoomInDown" data-wow-delay="1200ms">
+                    <h6>買房筆記</h6>
+                    <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 350">
+                        <polygon class="cls-1" points="0.2,86.5 0.2,258.5 149.2,344.5 298.2,258.5 298.2,86.5 149.2,0.5 " />
+                    </svg>
+                </a>
 
-                <div class="hexagon animated wow zoomInDown" data-wow-delay="1400ms">網路優勢</div>
+                <a href="" class="hexagon animated wow zoomInDown" data-wow-delay="1400ms">
+                    <h6>網路優勢</h6>
+                    <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 350">
+                        <polygon class="cls-1" points="0.2,86.5 0.2,258.5 149.2,344.5 298.2,258.5 298.2,86.5 149.2,0.5 " />
+                    </svg>
+                </a>
 
-                <div class="hexagon animated wow zoomInDown" data-wow-delay="1600ms">品牌包裝</div>
+                <a href="" class="hexagon animated wow zoomInDown" data-wow-delay="1600ms">
+                    <h6>品牌包裝</h6>
+                    <svg id="圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299 350">
+                        <polygon class="cls-1" points="0.2,86.5 0.2,258.5 149.2,344.5 298.2,258.5 298.2,86.5 149.2,0.5 " />
+                    </svg>
+                </a>
+
             </div>
         </div>
 
@@ -133,6 +159,7 @@
             data-wow-delay="3000ms">
 
     </div>
+
 
     <!-------------------------------------- 熱線消息 -------------------------------------->
 
@@ -143,7 +170,8 @@
 
                 <header class="col-lg-12 d-flex justify-content-start align-items-end big_title_world">
                     <h3 class="d-768-none">熱線消息</h3>
-                    <h4>NEWSPAPER</h4>
+                    <!-- <h4>NEWSPAPER</h4> -->
+                    <img src="images/NEWSPAPER_title_world.svg" alt="">
                 </header>
 
                 <div class="big_title_world d-768-block">
@@ -254,7 +282,7 @@
 
             </div>
 
-            <hr class="black-line-hr">
+            <hr class="black-line-hr d-1200-none">
 
         </div>
     </section>
@@ -268,7 +296,8 @@
 
                 <header class="col-lg-12 d-flex justify-content-start align-items-end big_title_world">
                     <h3 class="d-768-none">小城新聞</h3>
-                    <h4>CITY NEWS</h4>
+                    <!-- <h4>CITY NEWS</h4> -->
+                    <img src="images/CITYNEWS_title_world.svg" alt="">
                 </header>
 
                 <div class="big_title_world d-768-block">
@@ -435,7 +464,7 @@
 
 
     <!-------------------------------------- 其他主題 -------------------------------------->
-    <section>
+    <!-- <section>
         <div class="container">
             <div class="row">
 
@@ -450,7 +479,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!----------------------------------------- footer ---------------------------------------------->
     <!-- <footer>
@@ -464,7 +493,7 @@
 
 
     <!-- wow animate-->
-    <script src="js/wow.min.js"></script>
+    <script src="http://cdn.dowebok.com/131/js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
