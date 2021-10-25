@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>興城國際</title>
-    <meta name="description" content="" />
-    <meta name="Keywords" content="" />
+    <meta name="description" content="將興比心，城就買房初心！專業房產銷售團隊，開拓線上新趨勢，重視線下好服務， 帶您體驗B2B、B2C的超優勢！" />
+    <meta name="Keywords" content="興城國際" />
     <link href="images/favicon.ico" rel="shortcut icon" type="favicon.ico">
 
     <!-- bootstrap -->
@@ -73,6 +73,7 @@
     <script>
         $(document).ready(function () {
 
+            $(".navbar").hide();
 
             $(window).scroll(function () {
                 var Yoffset = window.pageYOffset || document.documentElement.scrollTop;
@@ -95,9 +96,11 @@
 
     <!----------------------------------------------- main -------------------------------------------->
 
-    <!-- <div class="index-menu-animation-phone"></div> -->
+    <div class="index-menu-animation-phone"></div>
 
     <div class="index-menu-animation">
+
+        <canvas id="canvas"></canvas>
 
         <img src="images/logo-index.svg" alt="" class="logo-index animated wow bounceInUp">
 
@@ -187,7 +190,7 @@
 
                 <div class="col-md-4 pr-1">
                     <a href="">
-                        <div class="masonry-pic1">
+                        <div class="masonry-pic1 animated wow fadeInRight">
                             <h6>南台灣唯一｜三鐵共構，2-3房致富列車啟航在即，你搭上了嗎？</h6>
                             <img src="images/new-arrow-icon.svg" alt="">
                         </div>
@@ -197,7 +200,7 @@
                 <div class="col-md-8">
 
                     <div class="row">
-                        <div class="col-md-4 pr-1">
+                        <div class="col-md-4 pr-1 animated wow fadeInUp">
                             <a href="">
                                 <div class="masonry-pic2">
                                     <h6>南台灣唯一｜三鐵共構，2-3房致富列車啟航</h6>
@@ -205,7 +208,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 animated wow fadeInLeft">
                             <a href="">
                                 <div class="masonry-pic3">
                                     <h6>南台灣唯一｜三鐵共構，2-3房致富列車啟航在即，你搭上了嗎？</h6>
@@ -216,7 +219,7 @@
                     </div>
 
                     <div class="row pt-1">
-                        <div class="col-md-8 pr-1">
+                        <div class="col-md-8 pr-1 animated wow fadeInDown">
                             <a href="">
                                 <div class="masonry-pic4">
                                     <h6>南台灣唯一｜三鐵共構，2-3房致富列車啟航在即，你搭上了嗎？</h6>
@@ -224,7 +227,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 animated wow fadeInLeft">
                             <a href="">
                                 <div class="masonry-pic5">
                                     <h6>南台灣唯一｜三鐵共構，2-3房致富列車啟航</h6>
@@ -309,7 +312,7 @@
 
             <ul class="row citynews-list">
 
-                <li class="col-md-6 col-12 animated wow zoomIn">
+                <li class="col-md-6 col-12 animated wow fadeInUp">
                     <div class="row">
                         <div class="col-md-4 col-4 news_pic">
                             <img src="images/CiTYNEWS-pic.jpg" alt="" class="img-fluid">
@@ -323,7 +326,7 @@
                     </div>
                 </li>
 
-                <li class="col-md-6 col-12 animated wow zoomIn">
+                <li class="col-md-6 col-12 animated wow fadeInUp">
                     <div class="row">
                         <div class="col-md-4 col-4 news_pic">
                             <img src="images/CiTYNEWS-pic.jpg" alt="" class="img-fluid">
@@ -337,7 +340,7 @@
                     </div>
                 </li>
 
-                <li class="col-md-6 col-12 animated wow zoomIn">
+                <li class="col-md-6 col-12 animated wow fadeInUp">
                     <div class="row">
                         <div class="col-md-4 col-4 news_pic">
                             <img src="images/CiTYNEWS-pic.jpg" alt="" class="img-fluid">
@@ -351,7 +354,7 @@
                     </div>
                 </li>
 
-                <li class="col-md-6 col-12 animated wow zoomIn">
+                <li class="col-md-6 col-12 animated wow fadeInUp">
                     <div class="row">
                         <div class="col-md-4 col-4 news_pic">
                             <img src="images/CiTYNEWS-pic.jpg" alt="" class="img-fluid">
