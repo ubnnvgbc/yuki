@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width initial-scale=1 shrink-to-fit=no maximum-scale=1.0 user-scalable=no">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>CHLITINA|克麗緹娜-搖紅包</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css">
+  <link rel="stylesheet" href="css/index.css?v=27">
+</head>
+
+<body>
+  <!--搖動感測modal-->
+  <div class="modal" id="detect-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">開啟搖動感測權限</h4>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <p>偵測到您使用的iOS版本為13，<br>iOS13起預設關閉手機搖動感測<br><br>您要手動開啟嗎？</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" type="button" data-dismiss="modal">取消</button>
+          <button class="btn btn-primary" id="btn" type="button">開啟</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--開獎結果modal-->
+  <div class="popup d-none">
+    <!--中獎-->
+    <div class="popup_test animated bounceIn">
+      <div class="red">
+        <div class="red-paper">
+          <h5 id="prize-title">恭喜！您中了</h5>
+          <div class="image-area"><img id="prize-img" src="img/prize_01.jpg" alt="">
+            <p id="prize-text">賦活緊緻組</p>
+          </div>
+          <div class="serial-area d-none">
+            <h6>500元購物金</h6>
+            <div class="serial">
+              <p id="serial">0146aANZ5xL5yTMm</p>
+            </div>
+            <p id="deadline">
+              購物金有效使用期限：<br>2020/5/1 (五) 23:59 為止</p>
+          </div>
+        </div>
+        <div class="red-btn">
+          <button id="popbtn-up">前往兌換</button>
+          <button class="d-none" id="popbtn-copy" onclick="CopyTextToClipboard('serial')">複製序號</button>
+          <button id="popbtn-down">我的專屬禮遇</button>
+        </div><img class="red-bottom" src="img/red.png" alt="">
+      </div>
+    </div>
+    <!--黑底-->
+    <div class="popbg"><img class="cong1 animated bounceInDownCong1" src="img/cong.png" alt=""></div>
+  </div>
+  <header><img src="img/logo.png" alt="logo"></header>
+  <main>
+    <div class="container">
+      <div class="wrapper">
+        <div class="light"><img class="blink" src="img/light.png" alt=""><img class="blink" src="img/light.png"
+            alt=""><img class="blink" src="img/light.png" alt=""></div>
+
+        <div class="deco">
+          <img src="img/bg_deco-top.png" alt="">
+          <img src="img/bg_deco-down.png" alt="">
+        </div>
+
+        <div class="title animated bounceInDown"><img src="img/title.png" alt=""></div>
+        <div class="phone-area">
+          <div class="phone"><img class="hand animated" src="img/hand.png?v=1" alt=""><img class="hand_light"
+              src="img/hand_light.png" alt=""><img class="hand_bg" src="img/hand_bg.png" alt=""></div>
+        </div>
+        <div class="people"><img class="girl" src="img/girl.png" alt=""><img class="boy" src="img/boy.png" alt=""><img
+            class="coin" src="img/coin.png" alt=""></div>
+        <div class="shake-btn">
+          <button id="shake" type="button">若搖動無反應請點擊</button>
+        </div>
+        <div class="info">
+          <div class="prize">
+            <div class="infoTitle">
+              <h4>獎品清單</h4>
+            </div>
+            <div class="prizelist">
+              <div class="item"><img src="img/prize_01.jpg?v=2" alt="">
+                <p>賦活緊緻組</p>
+              </div>
+              <div class="item"><img src="img/prize_02.jpg?v=2" alt="">
+                <p>LINE POINTS</p>
+              </div>
+              <div class="item"><img src="img/prize_01.jpg?v=2" alt="">
+                <p>賦活緊緻組</p>
+              </div>
+              <div class="item"><img src="img/prize_02.jpg?v=2" alt="">
+                <p>LINE POINTS</p>
+              </div>
+            </div>
+          </div>
+          <div class="eventdate">
+            <div class="infoTitle">
+              <h4>活動日期</h4>
+            </div>
+            <p>2021/03/11 ~ 2021/04/32</p>
+          </div>
+          <div class="eventnote text-justify">
+            <div class="infoTitle">
+              <h4>活動注意事項</h4>
+            </div>
+            <p>1. 得獎者同意，CHLITINA克麗緹娜得將其部分姓名及居住縣市公佈於本活動網站或相關行銷活動宣傳物中。</p>
+            <p>2. 個別得獎者之獎項內容及相關權利義務等注意事項以「得獎通知」信函說明為準。若得獎者未依CHLITINA克麗緹娜之程序或期限內完成領獎手續，即視同自願放棄得獎資格，原獎項由主辦單位自行處理。</p>
+            <p>3. 提醒您：得獎名單以CHLITINA克麗緹娜網站公告及得獎通知email為準；若您接獲類似通知，請務必主動與CHLITINA克麗緹娜再次確認，切勿逕自匯款、操作ATM，以維護您的權益。</p>
+            <p>4. 參加者於參加本活動同時，即視為同意接受本活動規範，CHLITINA克麗緹娜得將其部分姓名及居住縣市公佈於本活動網站或相關行銷活動宣傳物中，並有權決定取消、終止、修改或暫停本活動。</p>
+            <p>5. 得獎名單自網站公布日起十五日內，如聯繫未果將視同放棄，或其他不可抗力之因素，CHLITINA克麗緹娜有權決定取消、終止、修改或暫停本活動及相關獎項。</p>
+            <p>6. 本活動獎項之寄送地點僅限台本島及離島地區。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright© Taiwan 版權所有 英屬維京群島商克麗緹娜</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js?v=55"></script>
+</body>
+
+</html>
