@@ -364,11 +364,11 @@ var Book_v7 = {
        var position_left=$('#fb7-logo').position();
        var xMax_left=position_left.left+$('#fb7-logo').width();
               
-       if( xMax_center > xMin_right || xMax_left > xMin_center  ){
-         $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','hidden');
-       }else{
-         $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','visible');
-       }
+    //    if( xMax_center > xMin_right || xMax_left > xMin_center  ){
+    //      $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','hidden');
+    //    }else{
+    //      $('#fb7 #fb7-right,#fb7 #fb7-logo').css('visibility','visible');
+    //    }
 
 
     }, 
