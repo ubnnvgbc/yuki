@@ -167,13 +167,14 @@ main .container {
   position: relative;
   max-width: 540px;
   margin: 0 auto;
-  background: url("../img/bg_pattern.jpg") repeat top center;
-  background-size: 61px;
+  background: url("../img/bg_pattern2.jpg") repeat top center;
+  background-size: 100%;
+  background-position: 0% bottom;
   padding: 0; }
   main .container .wrapper {
     height: 100%;
     position: relative;
-    padding-bottom: 60px; }
+    padding-bottom: 40px; }
     main .container .wrapper .light img {
       opacity: 0;
       width: 20px;
@@ -199,17 +200,17 @@ main .container {
     main .container .wrapper .title {
       z-index: 1;
       position: relative;
-      padding: 25px 0 0 0;
+      padding: 100px 0 0 0;
       text-align: center; }
       main .container .wrapper .title img {
         width: 65%; }
     main .container .wrapper .phone-area {
-      padding: 0 20px;
-      margin-bottom: -60px; }
+      padding: 0 0px;
+      margin-bottom: -220px; }
       main .container .wrapper .phone-area .phone {
-        -webkit-transform: translateY(-50px);
-        -ms-transform: translateY(-50px);
-        transform: translateY(-50px);
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
         position: relative; }
         main .container .wrapper .phone-area .phone img.hand {
           z-index: 1;
@@ -245,9 +246,9 @@ main .container {
     transform: rotate(360deg); } }
     main .container .wrapper .people {
       position: relative;
-      height: 70px; }
+      height: 150px; }
       main .container .wrapper .people img {
-        max-width: 40%;
+        max-width: 65%;
         height: auto;
         position: absolute;
         z-index: 2;
@@ -338,7 +339,7 @@ main .container {
     main .container .wrapper .shake-btn {
       position: relative;
       text-align: center;
-      margin-bottom: 40px;
+      /* margin-bottom: 40px; */
       z-index: 3; }
       @media (min-width: 640px) {
         main .container .wrapper .shake-btn {
