@@ -3,6 +3,16 @@ $(document).ready(function () {
 
 	//.navbar上面選單滑下加底色-----------------------------------------------------------------------------------------
 
+	$(".page-arrow-icon").click(function () {
+		$("html,body").animate({
+			scrollTop: $('#arrowpage').offset().top - 100
+		}, 500);
+		return false;
+	});
+
+
+	//.navbar上面選單滑下加底色-----------------------------------------------------------------------------------------
+
 	$(window).scroll(function () {
 		var Yoffset = window.pageYOffset || document.documentElement.scrollTop;
 		var Xoffset = window.pageXOffset;
