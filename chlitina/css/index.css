@@ -164,6 +164,7 @@ header {
 
 main .container {
   overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
   max-width: 540px;
   margin: 0 auto;
@@ -174,7 +175,7 @@ main .container {
   main .container .wrapper {
     height: 100%;
     position: relative;
-    padding-bottom: 40px; }
+    padding-bottom: 20px; }
     main .container .wrapper .light img {
       opacity: 0;
       width: 20px;
@@ -269,7 +270,7 @@ main .container {
             main .container .wrapper .people img.girl {
               top: -180%; } }
         main .container .wrapper .people img.boy {
-          right: 0;
+          right: 35px;
           top: -100%; }
           @media (max-width: 375px) {
             main .container .wrapper .people img.boy {
@@ -279,7 +280,7 @@ main .container {
               top: -70%; } }
           @media (min-width: 640px) {
             main .container .wrapper .people img.boy {
-              top: -180%; } }
+              top: -140%; } }
         main .container .wrapper .people img.coin {
           max-width: 100%;
           width: 100%;
@@ -343,10 +344,10 @@ main .container {
       z-index: 3; }
       @media (min-width: 640px) {
         main .container .wrapper .shake-btn {
-          margin-bottom: 60px; } }
+          margin-bottom: 20px; } }
       main .container .wrapper .shake-btn button#shake {
         display: block;
-        margin: 0 auto 10px auto;
+        margin: 40px auto 10px auto;
         z-index: 1;
         cursor: pointer;
         position: relative;
