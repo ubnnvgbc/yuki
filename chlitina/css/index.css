@@ -280,7 +280,7 @@ main .container {
               top: -70%; } }
           @media (min-width: 640px) {
             main .container .wrapper .people img.boy {
-              top: -140%; } }
+              top: -130%; } }
         main .container .wrapper .people img.coin {
           max-width: 100%;
           width: 100%;
