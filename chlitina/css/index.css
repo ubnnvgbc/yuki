@@ -271,7 +271,7 @@ main .container {
               top: -180%; } }
         main .container .wrapper .people img.boy {
           right: 35px;
-          top: -100%; }
+          top: -80%; }
           @media (max-width: 375px) {
             main .container .wrapper .people img.boy {
               top: -80%; } }
