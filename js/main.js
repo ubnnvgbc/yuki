@@ -1,8 +1,19 @@
 $(document).ready(function () {
 
 
-	//.navbar上面選單滑下加底色-----------------------------------------------------------------------------------------
+	//小城新聞(新聞滑過去字顏色變)-----------------------------------------------------------------------------------------
 
+
+	$(".news-list-inner").mouseenter(function () {
+		$(this).find(".news_info").find("h3").css("color","#ae191c");
+		$(this).find(".news_info").find("p").css("color","#ae191c");
+	});
+	$(".news-list-inner").mouseleave(function () {
+		$(this).find(".news_info").find("h3").css("color","#000");
+		$(this).find(".news_info").find("p").css("color","#000");
+	});
+
+	//往下的箭頭，滑按-----------------------------------------------------------------------------------------
 	$(".page-arrow-icon").click(function () {
 		$("html,body").animate({
 			scrollTop: $('#arrowpage').offset().top - 100
@@ -32,16 +43,16 @@ $(document).ready(function () {
 
 
 	// PERFORMANCE興城業績
-	$(".chang-performance-pic").find("img:nth-child(2)").hide();
+	// $(".chang-performance-pic").find("img:nth-child(2)").hide();
 
-	$(".chang-performance-pic").mouseenter(function () {
-		$(this).find("img:nth-child(1)").hide();
-		$(this).find("img:nth-child(2)").show();
-	});
-	$(".chang-performance-pic").mouseleave(function () {
-		$(this).find("img:nth-child(2)").hide();
-		$(this).find("img:nth-child(1)").show();
-	});
+	// $(".chang-performance-pic").mouseenter(function () {
+	// 	$(this).find("img:nth-child(1)").hide();
+	// 	$(this).find("img:nth-child(2)").show();
+	// });
+	// $(".chang-performance-pic").mouseleave(function () {
+	// 	$(this).find("img:nth-child(2)").hide();
+	// 	$(this).find("img:nth-child(1)").show();
+	// });
 
 	//.navbar上面選單滑下加底色------後來改的
 
@@ -217,8 +228,6 @@ $(document).ready(function () {
 
 	// loop();
 	// setInterval(loop, 1000 / 60);
-
-
 
 
 
