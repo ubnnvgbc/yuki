@@ -50,6 +50,7 @@ $(function () {
 
 $('#popbtn-back').on('click', function () {
     $('.popup').addClass('d-none');
+    
 });
 
 
