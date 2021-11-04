@@ -832,16 +832,18 @@ footer {
 
 .Num-games{
   position:  absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   z-index: 1000;
   color: #fff;
-  font-size: 16px;
-  text-shadow: 0.1em 0.1em 0.2em black
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #871212;
+  padding: 1px 8px;
+  border-radius: 20px;
+  border: 1px solid #912222;
+  text-shadow: 0.1em 0.1em 0.2em rgb(56, 56, 56)
 
 }
 
-.Num-games b{
 
-
-}
