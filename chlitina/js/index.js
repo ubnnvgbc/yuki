@@ -43,6 +43,16 @@ $(function () {
         $('#detect-modal').modal('hide');
     });
 });
+
+
+
+
+
+$('#popbtn-back').on('click', function () {
+    $('.popup').addClass('d-none');
+});
+
+
 //抽獎
 function showPrize() {
     if (!isShaked) {
@@ -58,17 +68,17 @@ function showPrize() {
                 $('#prize-img').attr('src', 'img/prize_01.jpg');
                 $('#popbtn-up').text('使用優惠券(店員專用按鈕)');
                 break;
-            case 2:// LINE點數
-                $('#prize-img').attr('src', 'img/prize_02.jpg');
-                $('#prize-text').text('10點 LINE POINTS');
-                $('#popbtn-down').hide();
-                break;
-            case 3:// 序號
-                $('#popbtn-up').addClass('d-none');
-                $('#popbtn-copy').removeClass('d-none');
-                $('.image-area').addClass('d-none');
-                $('.serial-area').removeClass('d-none');
-                break;
+            // case 2:// LINE點數
+            //     $('#prize-img').attr('src', 'img/prize_02.jpg');
+            //     $('#prize-text').text('10點 LINE POINTS');
+            //     $('#popbtn-down').hide();
+            //     break;
+            // case 3:// 序號
+            //     $('#popbtn-up').addClass('d-none');
+            //     $('#popbtn-copy').removeClass('d-none');
+            //     $('.image-area').addClass('d-none');
+            //     $('.serial-area').removeClass('d-none');
+            //     break;
         }
         ;
         $('.hand').removeClass('animated tada');
@@ -177,3 +187,4 @@ function CopyTextToClipboard(id) {
 }
 //# sourceMappingURL=index.js.map
 //# sourceMappingURL=index.js.map
+
