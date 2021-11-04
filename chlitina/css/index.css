@@ -111,12 +111,12 @@ img {
           @media (max-width: 375px) {
             .popup .popup_test .red .red-btn button {
               padding: 4px 14px; } }
-          .popup .popup_test .red .red-btn button#popbtn-up, .popup .popup_test .red .red-btn button#popbtn-copy {
+          .popup .popup_test .red .red-btn button#popbtn-up, .popup .popup_test .red .red-btn button#popbtn-copy, .popup .popup_test .red .red-btn button#popbtn-back {
             color: #dc2029;
             background-color: #ffc010;
             border: 2px solid #ffc010; }
             @media (max-width: 320px) {
-              .popup .popup_test .red .red-btn button#popbtn-up, .popup .popup_test .red .red-btn button#popbtn-copy {
+              .popup .popup_test .red .red-btn button#popbtn-up, .popup .popup_test .red .red-btn button#popbtn-copy, .popup .popup_test .red .red-btn button#popbtn-back {
                 font-size: 1.4em; } }
           .popup .popup_test .red .red-btn button#popbtn-down {
             background-color: rgba(255, 255, 255, 0);
@@ -271,13 +271,19 @@ main .container {
               top: -180%; } }
         main .container .wrapper .people img.boy {
           right: 35px;
-          top: -80%; }
+          top: -120%; }
+          @media (max-width: 500px) {
+            main .container .wrapper .people img.boy {
+              top: -90%; } }
+              @media (max-width: 425px) {
+                main .container .wrapper .people img.boy {
+                  top: -60%; } }
           @media (max-width: 375px) {
             main .container .wrapper .people img.boy {
-              top: -80%; } }
-          @media (max-width: 320px) {
+              top: -50%; } }
+          @media (max-width: 350px) {
             main .container .wrapper .people img.boy {
-              top: -70%; } }
+              top: -35%; } }
           @media (min-width: 640px) {
             main .container .wrapper .people img.boy {
               top: -130%; } }
@@ -822,3 +828,20 @@ footer {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
+
+.Num-games{
+  position:  absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0.1em 0.1em 0.2em black
+
+}
+
+.Num-games b{
+
+
+}
