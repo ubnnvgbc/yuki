@@ -79,6 +79,17 @@ html {
   }
 }
 
+
+/*--------------------- 後來新增的中間尺寸------------------- */
+@media (min-width: 1366px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1320px;
+  }
+}
+/*--------------------- 後來新增的中間尺寸------------------- */
+
+
+
 .row {
   display: -ms-flexbox;
   display: flex;
