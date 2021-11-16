@@ -1,6 +1,25 @@
 $(document).ready(function () {
 
 
+	//FOOTER加入我的最愛-----------------------------------------------------------------------------------------
+	// function CreateBookmarkLink() {
+	// 	title = "ProgWiki"; 
+	// 	url = "http://www.player.idv.tw/prog/";
+	// 	   if (window.sidebar) {
+	// 		   window.sidebar.addPanel(title, url,"");
+	// 	   } else if( window.external ) {
+	// 		   window.external.AddFavorite( url, title); }
+	// 	   else if(window.opera && window.print) {
+	// 		   return true; }
+	// 	}
+	// 	if (window.external) {
+	// 	 document.write('<a href = "javascript:CreateBookmarkLink()");">書籤/我的最愛</a>'); 
+	// 	 } else  if (window.sidebar) {
+	// 	 document.write('<a href = "javascript:CreateBookmarkLink()");">書籤</a>'); 
+	// 	} else if (window.opera && window.print) {	
+	// 	  document.write('<a href = "javascript:CreateBookmarkLink()");">加入書籤</a>');
+	// 	}
+
 	//小城新聞(新聞滑過去字顏色變)-----------------------------------------------------------------------------------------
 
 
