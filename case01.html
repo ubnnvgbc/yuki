@@ -32,6 +32,11 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="text/javascript" src="js/main.js"></script>
 
+  <!-- swiper -->
+  <link rel="stylesheet" type="text/css" href="plugins/swiper/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.css">
+  <script type="text/javascript" src="plugins/swiper/swiper.min.js"></script>
+
 </head>
 
 <body class="body-margin">
@@ -92,17 +97,20 @@
   <!----------------------------------------------- main -------------------------------------------->
   <section class="case-details">
     <div class="container">
-      <img src="images/Hotissue/case01/BANNER.jpg" alt="" class="img-fluid d-992-none">
+      <img src="images/Hotissue/case01/BANNER.jpg" alt="" class="img-fluid d-992-none animated wow zoomIn">
       <img src="images/Hotissue/case01/BANNER-phone.jpg" alt="" class="img-fluid d-992-block">
 
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-5 animated wow fadeInLeft" data-wow-delay="200ms">
           <ul>
             <li>投資興建：三嘉開發建築有限公司</li>
             <li>建案型態：預售案</li>
             <li>接待中心：中安路590號</li>
             <li>建案基地：高雄市小港區中安路＆安美街
-              <img src="images/Hotissue/map-icon.svg" alt="">
+              <a href="https://www.google.com/maps?ll=22.584829,120.356536&z=17&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=15444435007329443097"
+                target="_brank">
+                <img src="images/Hotissue/map-icon.svg" alt="">
+              </a>
             </li>
             <li>樓層規劃：地上15層，地下2層</li>
             <li>建案戶數：店面6戶｜住家81戶</li>
@@ -114,10 +122,10 @@
         </div>
 
         <div class="col-lg-7 ICON-btMenu d-flex align-items-center justify-content-center">
-          <img src="images/Hotissue/case01/ICON-1.jpg" alt="" class="img-fluid">
-          <img src="images/Hotissue/case01/ICON-2.jpg" alt="" class="img-fluid">
-          <img src="images/Hotissue/case01/ICON-3.jpg" alt="" class="img-fluid">
-          <img src="images/Hotissue/case01/ICON-4.jpg" alt="" class="img-fluid">
+          <img src="images/Hotissue/case01/ICON-1.jpg" alt="" class="img-fluid animated wow fadeInUp" id="focusBT-1" data-wow-delay="400ms">
+          <img src="images/Hotissue/case01/ICON-2.jpg" alt="" class="img-fluid animated wow fadeInUp" id="focusBT-2" data-wow-delay="600ms">
+          <img src="images/Hotissue/case01/ICON-3.jpg" alt="" class="img-fluid animated wow fadeInUp" id="focusBT-3" data-wow-delay="800ms">
+          <img src="images/Hotissue/case01/ICON-4.jpg" alt="" class="img-fluid animated wow fadeInUp" id="focusBT-4" data-wow-delay="1000ms">
           <!-- <img src="images/Hotissue/case01/ICON-5.jpg" alt="" class="img-fluid"> -->
         </div>
 
@@ -132,22 +140,22 @@
       <div class="row">
 
         <!------- 重點1 ------->
-        <div class="focus-content col-lg-12">
+        <div class="focus-content col-lg-12" id="focus-1">
           <div class="row">
 
             <div class="col-lg-6">
-              <img src="images/Hotissue/case01/focus-1.gif" alt="" class="img-fluid">
+              <img src="images/Hotissue/case01/focus-1.gif" alt="" class="img-fluid  animated wow fadeInLeft">
             </div>
 
             <div class="col-lg-6 focus-content-text">
-              <h1>面對公園</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="200ms">面對公園</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="400ms">
                 明義特區，第一棟新大樓明義特區，第一棟新大樓<br>
                 棋盤街廓，新式排水規劃明義特區，第一棟新大樓<br>
                 現代建築，友鄰新別墅區明義特區，第一棟新大樓<br>
               </p>
-              <h1>低密度社區</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="600ms">低密度社區</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="800ms">
                 15樓唯一新大樓明義特區，第一棟新大樓<br>
                 約3樓高度600坪公園明義特區，第一棟新大樓<br>
                 5樓以下別墅新區明義特區，第一棟新大樓<br>
@@ -157,22 +165,22 @@
           </div>
         </div>
         <!------- 重點2 ------->
-        <div class="focus-content col-lg-12">
+        <div class="focus-content col-lg-12" id="focus-2">
           <div class="row">
 
             <div class="col-lg-6">
-              <img src="images/Hotissue/case01/focus-2.gif" alt="" class="img-fluid">
+              <img src="images/Hotissue/case01/focus-2.gif" alt="" class="img-fluid animated wow fadeInLeft">
             </div>
 
-            <div class="col-lg-6 focus-content-text">
-              <h1>MOMA美學新定義</h1>
-              <p>
+            <div class="col-lg-6 focus-content-text animated wow fadeInRight">
+              <h1 class="animated wow fadeInRight" data-wow-delay="200ms">MOMA美學新定義</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="400ms">
                 三面臨路，緊鄰公園綠地前，
                 位於明義特區內之低密度住宅區可享良好棟距及廣角視野，
                 社區全棟採綠建築規劃。
               </p>
-              <h1>家是博物館</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="600ms">家是博物館</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="800ms">
                 15樓唯一新大樓明義特區，第一棟新大樓<br>
                 約3樓高度600坪公園明義特區，第一棟新大樓<br>
                 5樓以下別墅新區明義特區，第一棟新大樓<br>
@@ -182,22 +190,22 @@
           </div>
         </div>
         <!------- 重點3 ------->
-        <div class="focus-content col-lg-12">
+        <div class="focus-content col-lg-12" id="focus-3">
           <div class="row">
 
             <div class="col-lg-6">
-              <img src="images/Hotissue/case01/focus-3.jpg" alt="" class="img-fluid">
+              <img src="images/Hotissue/case01/focus-3.jpg" alt="" class="img-fluid animated wow fadeInLeft">
             </div>
 
             <div class="col-lg-6 focus-content-text">
-              <h1>南高雄國際之門崛起</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="200ms">南高雄國際之門崛起</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="400ms">
                 明義特區，第一棟新大樓明義特區，第一棟新大樓<br>
                 棋盤街廓，新式排水規劃明義特區，第一棟新大樓<br>
                 現代建築，友鄰新別墅區明義特區，第一棟新大樓<br>
               </p>
-              <h1>橫跨七大產業版圖</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="600ms">橫跨七大產業版圖</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="800ms">
                 15樓唯一新大樓明義特區，第一棟新大樓<br>
                 約3樓高度600坪公園明義特區，第一棟新大樓<br>
                 5樓以下別墅新區明義特區，第一棟新大樓<br>
@@ -207,22 +215,22 @@
           </div>
         </div>
         <!------- 重點4 ------->
-        <div class="focus-content col-lg-12">
+        <div class="focus-content col-lg-12" id="focus-4">
           <div class="row">
 
             <div class="col-lg-6">
-              <img src="images/Hotissue/case01/focus-4.jpg" alt="" class="img-fluid">
+              <img src="images/Hotissue/case01/focus-4.jpg" alt="" class="img-fluid animated wow fadeInLeft">
             </div>
 
             <div class="col-lg-6 focus-content-text">
-              <h1>全棟淨軟水</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="200ms">全棟淨軟水</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="400ms">
                 明義特區，第一棟新大樓明義特區，第一棟新大樓<br>
                 棋盤街廓，新式排水規劃明義特區，第一棟新大樓<br>
                 現代建築，友鄰新別墅區明義特區，第一棟新大樓<br>
               </p>
-              <h1>全室SPC隔音地板</h1>
-              <p>
+              <h1 class="animated wow fadeInRight" data-wow-delay="600ms">全室SPC隔音地板</h1>
+              <p class="animated wow fadeInRight" data-wow-delay="800ms">
                 15樓唯一新大樓明義特區，第一棟新大樓<br>
                 約3樓高度600坪公園明義特區，第一棟新大樓<br>
                 5樓以下別墅新區明義特區，第一棟新大樓<br>
@@ -236,34 +244,116 @@
           <div class="row">
 
             <div class="col-lg-12">
-              <img src="images/Hotissue/case01/photo-album.jpg" alt="" class="img-fluid">
+              <!-- <img src="images/Hotissue/case01/photo-album.jpg" alt="" class="img-fluid animated wow fadeInUp"> -->
+
+              <div class="swiper-container two">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider-image">
+                      <img src="images/Hotissue/case01/720-pic01.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-image">
+                      <img src="images/Hotissue/case01/720-pic02.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-image">
+                      <img src="images/Hotissue/case01/720-pic03.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-image">
+                      <img src="images/Hotissue/case01/720-pic04.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slider-image">
+                      <img src="images/Hotissue/case01/720-pic05.jpg" alt="">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                
+              </div>
+
             </div>
 
-            <div class="col-lg-12 case-bt">
-              <img src="images/Hotissue/case-bt1.svg" alt="">
-              <img src="images/Hotissue/case-bt2.svg" alt="">
-              <img src="images/Hotissue/case-bt3.svg" alt="">
-              <img src="images/Hotissue/case-bt4.svg" alt="">
-              <img src="images/Hotissue/case-bt5.svg" alt="" class="d-992-none">
-            </div>
+            <ul class="col-lg-12 case-bt">
+              <li>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzOQgrakF1m-Vx0MTI64aHeujlW1wbY5y-CSQtmKaaD1h1fQ/viewform"
+                  target="_brank">
+                  <img src="images/Hotissue/case-bt1.svg" alt="" class="animated wow fadeInUp" data-wow-delay="200ms">
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.google.com/maps?ll=22.584829,120.356536&z=17&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=15444435007329443097"
+                  target="_brank">
+                  <img src="images/Hotissue/case-bt2.svg" alt="" class="animated wow fadeInUp" data-wow-delay="400ms">
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/%E8%89%BE%E7%BE%8E-MOMA-109498674749037" target="_brank">
+                  <img src="images/Hotissue/case-bt3.svg" alt="" class="animated wow fadeInUp" data-wow-delay="600ms">
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:(07)791-8895">
+                  <img src="images/Hotissue/case-bt4.svg" alt="" class="animated wow fadeInUp" data-wow-delay="800ms">
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  <img src="images/Hotissue/case-bt5.svg" alt="" class="d-992-none animated wow fadeInUp"
+                    data-wow-delay="1000ms">
+                </a>
+              </li>
+
+            </ul>
 
           </div>
         </div>
 
-
       </div>
     </div>
+
+    <script>
+      var swiper = new Swiper('.swiper-container.two', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        effect: 'coverflow',
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+          rotate: 0,
+          stretch: 100,
+          depth: 100,
+          modifier: 4,
+          slideShadows: false,
+        }
+      });
+    </script>
   </section>
 
 
   <section class="case-news">
-    
+
     <header>
       <div class="container">
 
         <div class="row">
 
-          <header class="col-lg-12 d-flex justify-content-start align-items-end big_title_world">
+          <header class="col-lg-12 d-flex justify-content-start align-items-end big_title_world animated wow fadeInUp">
             <h3 class="d-768-none">本案訊息</h3>
             <!-- <h4>NEWSPAPER</h4> -->
             <img src="images/Hotissue/NEWS_title_world.svg" alt="">
