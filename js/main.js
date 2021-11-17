@@ -20,6 +20,43 @@ $(document).ready(function () {
 	// 	  document.write('<a href = "javascript:CreateBookmarkLink()");">加入書籤</a>');
 	// 	}
 
+	//熱線建案(5大特點)-----------------------------------------------------------------------------------------
+	$("#focusBT-1").click(function () {
+		$("html,body").animate({
+			scrollTop: $('#focus-1').offset().top - 100
+		}, 500);
+		return false;
+	});
+
+	$("#focusBT-2").click(function () {
+		$("html,body").animate({
+			scrollTop: $('#focus-2').offset().top - 100
+		}, 500);
+		return false;
+	});
+	
+	$("#focusBT-3").click(function () {
+		$("html,body").animate({
+			scrollTop: $('#focus-3').offset().top - 100
+		}, 500);
+		return false;
+	});
+	
+
+	$("#focusBT-4").click(function () {
+		$("html,body").animate({
+			scrollTop: $('#focus-4').offset().top - 100
+		}, 500);
+		return false;
+	});
+	
+	$("#focusBT-5").click(function () {
+		$("html,body").animate({
+			scrollTop: $('#focus-5').offset().top - 100
+		}, 500);
+		return false;
+	});	
+
 	//小城新聞(新聞滑過去字顏色變)-----------------------------------------------------------------------------------------
 
 
