@@ -568,6 +568,18 @@ button.swiper-pagination-bullet {
   width: 750px;
 }
 
+@media screen and (max-width:1200px){
+  .two .swiper-slide {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .two .swiper-slide {
+    width: 320px;
+  }
+}
+
 .swiper-slide img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
