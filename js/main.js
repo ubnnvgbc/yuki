@@ -20,6 +20,42 @@ $(document).ready(function () {
 	// 	  document.write('<a href = "javascript:CreateBookmarkLink()");">加入書籤</a>');
 	// 	}
 
+
+
+	//熱線建案(相簿按鈕)-----------------------------------------------------------------------------------------
+
+	$(".case-bt>li:nth-child(1)").hover(function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt1-hover.svg");
+	}, function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt1.svg");
+	});
+
+	$(".case-bt>li:nth-child(2)").hover(function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt2-hover.svg");
+	}, function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt2.svg");
+	});
+
+	$(".case-bt>li:nth-child(3)").hover(function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt3-hover.svg");
+	}, function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt3.svg");
+	});
+
+	$(".case-bt>li:nth-child(4)").hover(function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt4-hover.svg");
+	}, function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt4.svg");
+	});
+
+	$(".case-bt>li:nth-child(5)").hover(function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt5-hover.svg");
+	}, function () {
+		$(this).find("img").attr("src", "images/Hotissue/case-bt5.svg");
+	});
+
+
+
 	//熱線建案(5大特點)-----------------------------------------------------------------------------------------
 	$("#focusBT-1").click(function () {
 		$("html,body").animate({
@@ -34,14 +70,14 @@ $(document).ready(function () {
 		}, 500);
 		return false;
 	});
-	
+
 	$("#focusBT-3").click(function () {
 		$("html,body").animate({
 			scrollTop: $('#focus-3').offset().top - 100
 		}, 500);
 		return false;
 	});
-	
+
 
 	$("#focusBT-4").click(function () {
 		$("html,body").animate({
@@ -49,24 +85,24 @@ $(document).ready(function () {
 		}, 500);
 		return false;
 	});
-	
+
 	$("#focusBT-5").click(function () {
 		$("html,body").animate({
 			scrollTop: $('#focus-5').offset().top - 100
 		}, 500);
 		return false;
-	});	
+	});
 
 	//小城新聞(新聞滑過去字顏色變)-----------------------------------------------------------------------------------------
 
 
 	$(".news-list-inner").mouseenter(function () {
-		$(this).find(".news_info").find("h3").css("color","#ae191c");
-		$(this).find(".news_info").find("p").css("color","#ae191c");
+		$(this).find(".news_info").find("h3").css("color", "#ae191c");
+		$(this).find(".news_info").find("p").css("color", "#ae191c");
 	});
 	$(".news-list-inner").mouseleave(function () {
-		$(this).find(".news_info").find("h3").css("color","#000");
-		$(this).find(".news_info").find("p").css("color","#000");
+		$(this).find(".news_info").find("h3").css("color", "#000");
+		$(this).find(".news_info").find("p").css("color", "#000");
 	});
 
 	//往下的箭頭，滑按-----------------------------------------------------------------------------------------
