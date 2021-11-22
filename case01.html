@@ -142,8 +142,31 @@
         <div class="focus-content col-lg-12" id="focus-1">
           <div class="row">
 
-            <div class="col-lg-6">
-              <img src="images/Hotissue/case01/focus-1.gif" alt="" class="img-fluid  animated wow fadeInLeft">
+            <div class="col-lg-6" id="two-pic-turn">
+              <img src="images/Hotissue/case01/focus-1-1.jpg" alt="" class="img-fluid  animated wow fadeInLeft">
+              <script>
+                $(document).ready(function () {
+
+                  var sec = 1;
+                  $("#two-pic-turn").find("img").hide();
+                  $("#two-pic-turn").find("img:nth-child(1)").show();
+
+                  setInterval(
+                    function () {
+
+                      if (sec == 1) {
+                        sec = sec + 1;
+                        $("#two-pic-turn").find("img").attr("src", "images/Hotissue/case01/focus-1-" + sec +".jpg");
+                      } else {
+                        sec = sec - 1;
+                        $("#two-pic-turn").find("img").attr("src", "images/Hotissue/case01/focus-1-" + sec +".jpg");
+                      };
+
+                    }, 2000);
+
+
+                });
+              </script>
             </div>
 
             <div class="col-lg-6 focus-content-text">
@@ -167,8 +190,31 @@
         <div class="focus-content col-lg-12" id="focus-2">
           <div class="row">
 
-            <div class="col-lg-6">
-              <img src="images/Hotissue/case01/focus-2.gif" alt="" class="img-fluid animated wow fadeInLeft">
+            <div class="col-lg-6" id="two-pic-turn2">
+              <img src="images/Hotissue/case01/focus-2-1.jpg" alt="" class="img-fluid  animated wow fadeInLeft">
+              <script>
+                $(document).ready(function () {
+
+                  var sec = 1;
+                  $("#two-pic-turn2").find("img").hide();
+                  $("#two-pic-turn2").find("img:nth-child(1)").show();
+
+                  setInterval(
+                    function () {
+
+                      if (sec == 1) {
+                        sec = sec + 1;
+                        $("#two-pic-turn2").find("img").attr("src", "images/Hotissue/case01/focus-2-" + sec +".jpg");
+                      } else {
+                        sec = sec - 1;
+                        $("#two-pic-turn2").find("img").attr("src", "images/Hotissue/case01/focus-2-" + sec +".jpg");
+                      };
+
+                    }, 4000);
+
+
+                });
+              </script>
             </div>
 
             <div class="col-lg-6 focus-content-text animated wow fadeInRight">
